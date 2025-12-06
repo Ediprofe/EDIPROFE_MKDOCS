@@ -1,0 +1,72 @@
+site_name: Ediprofe
+site_url: https://Ediprofe.github.io/EDIPROFE_MKDOCS
+site_description: Recursos educativos de Física, Química, Matemáticas y Ciencias
+
+theme:
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Modo claro
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - content.tabs.link
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js
+
+extra_css:
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css
+  - stylesheets/extra.css
+
+nav:
+  - 🏠 Inicio: index.md
+  
+  - 🔬 Física:
+    - fisica/index.md
+    - 📖 Introducción:
+      - fisica/introduccion/index.md
+      - Lección Ejemplo: fisica/introduccion/leccion-ejemplo.md
+    - 📖 Cinemática:
+      - fisica/cinematica/index.md
+  
+  - ⚗️ Química:
+    - quimica/index.md
+    - 📖 La Materia:
+      - quimica/la-materia/index.md
+    - 📖 Estructura Atómica:
+      - quimica/estructura-atomica/index.md
+  
+  - 📐 Matemáticas:
+    - matematicas/index.md
+  
+  - 🌿 Ciencias:
+    - ciencias/index.md
